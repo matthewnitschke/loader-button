@@ -13,4 +13,4 @@
     button.innerHTML = btnText;
   }
 
-}(this.IdleListener = this.IdleListener || {}));
+}(this.LoaderButton = this.LoaderButton || {}));
