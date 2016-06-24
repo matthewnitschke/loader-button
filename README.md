@@ -1,4 +1,4 @@
-# loader-button
+# Loader Button
 An incredibly simple javascript loader button plugin
 
 # Usage
