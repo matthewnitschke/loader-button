@@ -4,12 +4,14 @@
   ns.add = function add(buttonId){
     var button = document.getElementById(buttonId);
     button.setAttribute('data-button-text', button.innerHTML);
+    button.setAttribute('disabled', true);
     button.innerHTML = ns.spinnerHtml;
   }
 
   ns.remove = function remove(buttonId){
     var button = document.getElementById(buttonId);
     var btnText = button.getAttribute('data-button-text');
+    button.removeAttribute('disabled');
     button.innerHTML = btnText;
   }
 
