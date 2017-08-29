@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="loaderButton.css">
+  <script src="loaderButton.js"></script>
+
+  <style>
+    .loader-button-dot {
+      background-color: yellow;
+    }
+  </style>
+
+</head>
+<body>
+
+  <button id="btn">Button</button>
+
+  <script>
+    document.getElementById("btn").addEventListener('click', function(){
+      var bt = LoaderButton.add("#btn");
+      setTimeout(function(){
+        LoaderButton.remove(bt);
+      }, 2000);
+    })
+
+  </script>
+
+</body>
+</html>
