@@ -10,9 +10,13 @@ An incredibly simple javascript loader button plugin
 
 ### Javascript
 ```javascript
-// Add the loader
-LoaderButton.add('submitButton')
 
-// Remove the loader
-LoaderButton.remove('submitButton')
+LoaderButton.add('#submitButton'); // Add the loader
+LoaderButton.remove('#submitButton'); // Remove the loader
+
+// OR
+
+var bt = document.getElementById('submitButton');
+LoaderButton.remove(bt);
+LoaderButton.add(bt);
 ```
